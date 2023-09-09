@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/ikon.png' %}"/>
+    <link rel="stylesheet" media="screen and (color)" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaplya</title>
+</head>
+<body>
+    <div class="blur" id="bl1">
+    <header id="header">
+        <div class="header_logo">
+            <h1>K</h1>
+            <h2>Kaplya</h2>
+        </div>
+        <div class="header_menu" id="header1">
+            <ul>
+                <li><a href="{%url 'prak' %}">Главная</a></li>
+                <li><a id="openModal"href="#">Обратная связь</a></li>
+                <li><a href="http://127.0.0.1:8000/admin/kaplya/">Войти через Админ панель</a></li>
+            </ul>
+        </div>
+        <div class="burger" id="openburger" id="openheader">
+            <img src="{% static 'img/bur.png' %}">
+        </div>
+    </header>
+        </div>
+                <div class="modal" id="modal">
+                    <span class="close">&times;</span>
+                    <p>Форма для обратной связи</p>
+                    <form id='form' action="{% url 'prak' %}" method="post">
+                        {% csrf_token %}
+                        <div class="text">
+                            <h1>Ваше имя:</h1>
+                        <input type="text" name="name">
+                            </div>
+                        <div class="email">
+                            <h2>Электронная почта:</h2>
+                        <input type="email" name="email">
+                            </div>
+                          <div class="number">
+                              <h3>Ваш номер:</h3>
+                        <input type="text" name="number">
+                            </div>
+                        <div class="text1">
+                            <h4>Текст для сообщения:</h4>
+                        <input type="text" name="problem">
+                            </div>
+                        <div class="submit">
+                        <input type="submit" value="Отправить заявку">
+                            </div>
+                    </form>
+            </div>
+    <div class="blur-end" id="bl2">
+        <nav id="nav">
+        <div class="saitbar" id="burger">
+            <h1>Категории</h1>
+             <form class="d-flex" action="{% url 'results' %}" method="get">
+            <input name="q" class="form-control mr-2"  type="search" placeholder="Поиск" aria-label="Search">
+            <button  class="btn btn-outline-success" type="submit">🔍</button>
+      </form>
+            <span class="closes">&times;</span>
+            <hr>
+<!--При нажатии на категорию чтоб не исчезали-->
+            {%for a in categor%}
+             <li><a href="{%url 'post' a.id %}" >{{a.name}}</a></li>
+            {%endfor%}
+            <!--Выводит категории-->
+            {%for a in categoriya%}
+             <li><a href="{%url 'post' a.id %}" >{{a.name}}</a></li>
+            {%endfor%}
+            {%for u in burger%}
+            {{i.name}}
+            {%endfor%}
+            <!--Закончил-->
+            <div class="header_burger">
+            <ul>
+                <li><a href="{%url 'prak' %}">Главная</a></li>
+                <li><a id="openModali"href="#">Обратная связь</a></li>
+                <li><a href="http://127.0.0.1:8000/admin/kaplya/">Админ панель</a></li>
+            </ul>
+                </div>
+        </div>
+    </nav>
+    <content id="cont">
+        <div class="content">
+            <!--Выводит новости при открытие категорий-->
+            {%for a in newss%}
+            <p>{{a.name}}</p>
+            <hr>
+                <p>{{a.text}}</p>
+            <img src="{{a.cover.url}}" alt="" width="50%" height="50%">
+            {%endfor%}
+            <!--Закончил-->
+            <!--Выводит новости-->
+            {%for a in new%}
+                <p>{{a.name}}</p>
+                <hr>
+                <p>{{a.text}}</p>
+            <img src="{{a.cover.url}}" alt="" width="50%" height="50%">
+                {%endfor%}
+            <!--Закончил-->
+        </div>
+    </content>
+       <footer id="footer">
+        <div class="footer">
+            <h1>Наши контакты</h1>
+            <h1>Звоните или пишите нам в любые мессенджеры :)</h1>
+            <div class="photo_one">
+                <img src="{% static 'img/phone.png' %}">
+                <h1>Контакты</h1>
+                <h1>+7-987-(668)-18-50</h1>
+                <h1>kaplya@icloud.com</h1>
+            </div>
+            <div class="photo_two">
+                <img src="{% static 'img/addres.png' %}">
+                <h1>Адрес производства</h1>
+                <h1>г. Шумерля ул. Некрасово</h1>
+            </div>
+            <div class="photo_three">
+                <img src="{% static 'img/papper.png' %}">
+                <h1>Реквизиты</h1>
+                <h1>ИП Копылов Данил Алексеевич</h1>
+            </div>
+            <div class="additionally">
+                <h1>© 2021 Все права защищены</h1>
+            </div>
+        </div>
+            <div class="vk" id="vk">
+                <img src="{% static 'img/vk.jpg' %}" width="3%" height="3%">
+            </div>
+            <div class="inst" id="inst">
+                <img src="{% static 'img/inst.jpg' %}" width="3%" height="3%">
+            </div>
+            <div class="telegram" id="telegram">
+                <img src="{% static 'img/telegram.jpg' %}" width="3%" height="3%">
+            </div>
+    </footer>
+    </div>
+    <script src="{% static 'js/st.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.model{
+    display: none;
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid black;
+}
+.model_content{
+    background: green;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close{
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -8px;
+}
+.model-content p{
+    margin-left: 100px;
+    margin-top: 91px;
+    float: left;
+}

@@ -1,0 +1,1201 @@
+/*Боди сам документ*/
+.body,html{
+    position: relative;
+    width: 1600px;
+    height: 901px;
+    background: black;
+}
+/*Логотип*/
+.header_logo {
+    position: absolute;
+    width: 70px;
+    height: 58px;
+    left: 30%;
+    top: 31px;
+    background: #ffffff;
+    float: left;
+}
+.burger {
+    float: right;
+    margin-top: 26px;
+    display:none;
+}
+.header_burger{
+    display:none;
+}
+.text {
+    width: 300px;
+}
+/*Буква К*/
+.header_logo h1{
+    position: absolute;
+    width: 49px;
+    height: 27px;
+    left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+/*Для логотипо допы*/
+.header_logo h2{
+    position: absolute;
+    width: 129px;
+    height: 29px;
+    left: 50px;
+    top: -3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/*Меню*/
+.header_menu {
+    position: absolute;
+    width: 82%;
+    height: 116px;
+    left: 19%;
+    top: 4px;
+    float: left;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0) 0%, rgba(243, 194, 18, 0.38) 100%);
+    border-radius: 20px;
+}
+/* Главная */
+.header_menu a {
+    position: relative;
+    width: 474.12px;
+    height: 33px;
+    left: 700px;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    text-decoration-line: inherit;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.header_menu li {
+    position: relative;
+    left: -220px;
+    top: 0px;
+    display: table-cell;
+    font-family: 'Montserrat';
+    text-align: center;
+    margin: 403px;
+    padding: 27px;
+}
+/*Окно с котегориями*/
+.saitbar {
+    position: absolute;
+    width: 270px;
+    height: 549px;
+    left: 305px;
+    top: 140px;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0.0670833) 0%, rgba(243, 194, 18, 0.28) 49.48%, rgba(243, 194, 18, 0) 100%);
+    border-radius: 29px;
+}
+/*Для категории*/
+.saitbar h1{
+    position: absolute;
+    width: 219px;
+    height: 31.75px;
+    left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.saitbar hr{
+    margin-top: 33px;
+}
+.closes{
+    position: relative;
+    width: 180.86px;
+    height: 60px;
+    left: 425px;
+    top: 300px;
+    border-radius: 30px;
+    user-select: none;
+}
+.closes h1{
+position: relative;
+    width: 160px;
+    height: 40px;
+    left: 7px;
+    top: -38px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFCFC;
+}
+
+.saitbar a{
+    position: relative;
+    width: 245px;
+    height: 34px;
+    left: -3px;
+    margin: 15px;
+    top: -7px;
+    display: inline-block;
+    line-height: 90px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.saitbar li {
+    list-style-type:none;
+}
+
+/*Окно с контентом*/
+.content {
+    position: absolute;
+    width: 1024px;
+    height: 549px;
+    left: 37%;
+    top: 140px;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0.0487985) 0%, rgba(243, 194, 18, 0.28) 49.01%, rgba(243, 194, 18, 0) 100%);
+    border-radius: 30px;
+    text-align: center;
+    overflow-y: overlay;
+}
+.content p{
+    color: white;
+    display: table-header-group;
+    display: flow-root;
+    padding-top: -11px;
+    text-align: center;
+}
+/*Заключение*/
+.footer {
+    position: absolute;
+    width: 1325px;
+    height: 291px;
+    left: 19%;
+    top: 705px;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0.52) 0%, rgba(243, 194, 18, 0) 100%);
+    border-radius: 38px;
+}
+/*Для контактов*/
+.footer h1{
+    position: relative;
+    width: 534px;
+    height: 27px;
+    left: 400px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* Картинка */
+.photo_one img{
+    position: absolute;
+    width: 58.27px;
+    height: 56px;
+    left: 175px;
+}
+/* Текст */
+.photo_one h1{
+    position: relative;
+    width: 205.05px;
+    height: 23px;
+    left: 100px;
+    top: 62px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* Картинка */
+.photo_two img{
+    position: absolute;
+    width: 67.23px;
+    height: 60px;
+    left: 650px;
+    top: 100px;
+}
+/* Текст */
+.photo_two h1{
+    position: relative;
+    width: 284.61px;
+    height: 24px;
+    top: -45px;
+    left: 542px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* Картинка */
+.photo_three img{
+    position: absolute;
+    width: 67.23px;
+    height: 60px;
+    left: 1100px;
+    top: 100px;
+}
+/* Текст */
+.photo_three h1{
+    position: relative;
+    height: 25px;
+    width: 400px;
+    left: 932px;
+    top: -120px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* Текст */
+.additionally h1{
+    position: absolute;
+    width: 363.05px;
+    height: 31px;
+    left: 500px;
+    top: 254px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.modal{
+    position: fixed;
+    width: 1000px;
+    height: 350px;
+    left: 450px;
+    top: 200px;
+    z-index:100;
+    background: #8C7B3D;
+    border-radius: 80px;
+    display:none;
+    border: #efefef 2px solid;
+}
+.close{
+    margin-left: 945px;
+    font-size: 60px;
+    margin-top: 0px;
+    float: left;
+    color: yellow;
+}
+.modal p{
+    position: absolute;
+    width: 440.59px;
+    height: 28.05px;
+    left: 300px;
+    top: -16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+ }
+.modal h1{
+    position: absolute;
+    width: 120px;
+    left: 50px;
+    top: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.modal h2 {
+    position: absolute;
+    width: 214px;
+    left: 5%;
+    top: 30%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.modal h3 {
+    position: absolute;
+    width: 175px;
+    left: 3%;
+    top: 50%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.modal h4 {
+    position: absolute;
+    width: 346.2px;
+    height: 30.95px;
+    left: 50%;
+    top: 7%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.text input{
+    width: 250px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 18%;
+}
+.email input {
+    width: 247px;
+    height: 20px;
+    float: left;
+    margin-left: 54px;
+    margin-top: 45px;
+}
+.number input{
+    width: 245px;
+    height: 20px;
+    float: left;
+    margin-left: -254px;
+    margin-top: 120px;
+}
+.text1 input{
+    width: 435px;
+    height: 169px;
+    text-align: -webkit-center;
+    margin-left: 15%;
+    margin-top: -2%;
+}
+.submit input{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 40%;
+    top: 280px;
+    background: #039912;
+    border-radius: 30px;
+}
+.vk img{
+    position: relative;
+    float: right;
+    left: -14%;
+    margin-top: 58%;
+}
+.inst img{
+    position: relative;
+    float: right;
+    left: -5%;
+    margin-top: 58%;
+}
+.telegram img{
+    position: relative;
+    float: right;
+    left: 4%;
+    margin-top: 58%;
+}
+.loader::after {
+    content: "";
+    width: 75px;
+    position: relative;
+    top: 30%;
+    left: 8%;
+    height: 75px;
+    border: 15px solid white;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: loading 0.5s ease infinite;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid white;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: loading 0.5s ease infinite;
+
+}
+@keyframes loading{
+    from {transform: rotate(0turn)}
+    to {transform: rotate(1turn)}
+}
+
+@media (max-width: 1738px) and (min-width: 1538px){
+    .vk img {
+    position: relative;
+    float: right;
+    left: -17%;
+    margin-top: 58%;
+}
+.inst img {
+    position: relative;
+    float: right;
+    left: -8%;
+    margin-top: 58%;
+}
+.telegram img {
+    position: relative;
+    float: right;
+    left: 1%;
+    margin-top: 58%;
+}
+    .header_menu {
+        position: absolute;
+        width: 81%;
+        height: 12%;
+        left: 255px;
+        top: 4px;
+        float: left;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0) 0%, rgba(243, 194, 18, 0.38) 100%);
+        border-radius: 20px;
+    }
+    .header_menu a {
+        position: relative;
+        left: 700px;
+        font-family: 'Montserrat';
+        font-size: 25px;
+        text-decoration-line: inherit;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .content {
+        position: absolute;
+        width: 1011px;
+        height: 550px;
+        left: 540px;
+        top: 128px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0487985) 0%, rgba(243, 194, 18, 0.28) 49.01%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 30px;
+        text-align: center;
+        overflow-y: auto;
+    }
+    .saitbar {
+        position: absolute;
+        width: 270px;
+        height: 549px;
+        left: 255px;
+        top: 125px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0670833) 0%, rgba(243, 194, 18, 0.28) 49.48%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 29px;
+    }
+    .footer {
+        position: absolute;
+        width: 1311px;
+        height: 291px;
+        left: 260px;
+        top: 705px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.52) 0%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 38px;
+    }
+}
+@media (max-width: 1538px) and (min-width: 1300px){
+    .vk img {
+    position: relative;
+    float: right;
+    left: -22%;
+    margin-top: 58%;
+}
+.loader::after {
+    content: "";
+    position: relative;
+    width: 75px;
+    height: 75px;
+    top: 40%;
+    left: 20%;
+    border: 15px solid white;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: loading 0.5s ease infinite;
+}
+.inst img {
+    position: relative;
+    float: right;
+    left: -13%;
+    margin-top: 58%;
+}
+.telegram img {
+    position: relative;
+    float: right;
+    left: -4%;
+    margin-top: 58%;
+}
+    .header_menu {
+        position: absolute;
+        width: 81%;
+        height: 12%;
+        left: 180px;
+        top: 4px;
+        float: left;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0) 0%, rgba(243, 194, 18, 0.38) 100%);
+        border-radius: 20px;
+    }
+    .seti img {
+        position: relative;
+        float: right;
+        left: -15%;
+        margin-top: 58%;
+    }
+    .saitbar {
+        position: absolute;
+        width: 270px;
+        height: 549px;
+        left: 180px;
+        top: 130px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0670833) 0%, rgba(243, 194, 18, 0.28) 49.48%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 29px;
+    }
+    .content {
+        position: absolute;
+        width: 1011px;
+        height: 550px;
+        left: 470px;
+        top: 132px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0487985) 0%, rgba(243, 194, 18, 0.28) 49.01%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 30px;
+        text-align: center;
+        overflow-y: auto;
+    }
+    .footer {
+        position: absolute;
+        width: 1311px;
+        height: 291px;
+        left: 180px;
+        top: 705px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.52) 0%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 38px;
+    }
+}
+@media (max-width: 1300px) and (min-width: 1000px){
+   .header_logo {
+    position: absolute;
+    width: 70px;
+    height: 58px;
+    left: 25%;
+    top: 31px;
+    background: #ffffff;
+    float: left;
+}
+.loader::after {
+    content: "";
+    position: relative;
+    width: 75px;
+    height: 75px;
+    top: 22%;
+    left: 35%;
+    border: 15px solid white;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: loading 0.5s ease infinite;
+}
+    .header_menu {
+        position: absolute;
+        width: 81%;
+        height: 12%;
+        left: 180px;
+        top: 4px;
+        float: left;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0) 0%, rgba(243, 194, 18, 0.38) 100%);
+        border-radius: 20px;
+    }
+    .saitbar {
+        position: absolute;
+        width: 270px;
+        height: 549px;
+        left: 180px;
+        top: 152px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0670833) 0%, rgba(243, 194, 18, 0.28) 49.48%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 29px;
+    }
+    .content {
+        position: absolute;
+        width: 1011px;
+        height: 550px;
+        left: 470px;
+        top: 152px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0487985) 0%, rgba(243, 194, 18, 0.28) 49.01%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 30px;
+        text-align: center;
+        overflow-y: auto;
+    }
+    .footer {
+        position: absolute;
+        width: 1311px;
+        height: 291px;
+        left: 180px;
+        top: 705px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.52) 0%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 38px;
+    }
+    .vk img {
+    position: relative;
+    float: right;
+    left: -22%;
+    margin-top: 58%;
+}
+.inst img {
+    position: relative;
+    float: right;
+    left: -13%;
+    margin-top: 58%;
+}
+.telegram img {
+    position: relative;
+    float: right;
+    left: -4%;
+    margin-top: 58%;
+}
+.modal {
+    position: fixed;
+    width: 1000px;
+    height: 350px;
+    left: 20%;
+    top: 200px;
+    z-index: 100;
+    background: #8C7B3D;
+    border-radius: 80px;
+    display: none;
+}
+}
+@media (max-width: 999px) and (min-width: 400px){
+    .header_logo {
+        position: absolute;
+        width: 70px;
+        height: 58px;
+        left: 20%;
+        top: 31px;
+        background: #ffffff;
+        float: left;
+    }
+.loader::after {
+    content: "";
+    width: 75px;
+    position: relative;
+    top: 126%;
+    height: 75px;
+    left: 108%;
+    border: 15px solid white;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: loading 0.5s ease infinite;
+}
+    .header_menu {
+        position: absolute;
+        width: 1311px;
+        height: 116px;
+        left: 170px;
+        top: 4px;
+        float: left;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0) 0%, rgba(243, 194, 18, 0.38) 100%);
+        border-radius: 20px;
+    }
+
+    .vk img {
+        position: relative;
+        float: right;
+        left: -23%;
+        margin-top: 58%;
+    }
+    .inst img {
+        position: relative;
+        float: right;
+        left: -14%;
+        margin-top: 58%;
+    }
+    .telegram img {
+        position: relative;
+        float: right;
+        left: -5%;
+        margin-top: 58%;
+    }
+    .header_menu a {
+        position: relative;
+        width: 474.12px;
+        height: 33px;
+        left: 600px;
+        font-family: 'Montserrat';
+        font-size: 25px;
+        text-decoration-line: inherit;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .content {
+        position: absolute;
+        width: 1310px;
+        height: 536px;
+        left: 11%;
+        top: 152px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0487985) 0%, rgba(243, 194, 18, 0.28) 49.01%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 30px;
+        text-align: center;
+        overflow-y: auto;
+    }
+    .footer {
+        position: absolute;
+        width: 1334px;
+        height: 291px;
+        left: 168px;
+        top: 705px;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.52) 0%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 38px;
+    }
+    .burger{
+        display: block;
+
+    }
+    .burger img{
+        position: absolute;
+        margin-left: -225px;
+    }
+    .saitbar {
+        position: absolute;
+        width: 1074px;
+        height: 275px;
+        left: 255px;
+        display: none;
+        top: 152px;
+        border-radius: 29px;
+        z-index: 1000;
+        background-color: #5f5b11;
+    }
+    .saitbar h1 {
+        position: absolute;
+        width: 219px;
+        height: 31.75px;
+        left: 40%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .saitbar li {
+        list-style-type: none;
+        display: inline-block;
+    }
+    .saitbar a {
+        position: relative;
+        width: 181px;
+        height: 34px;
+        left: -3px;
+        margin: 15px;
+        top: -7px;
+        display: inline-block;
+        line-height: 90px;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 68px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .closes {
+        position: relative;
+        font-size: 69px;
+        float: left;
+        left: 1023px;
+        top: -7px;
+        border-radius: 30px;
+    }
+    .saitbar hr {
+        margin-top: 70px;
+    }
+    .modal{
+        left: 20%;
+    }
+}
+@media (max-width: 400px) and (min-width: 320px){
+    .header_menu {
+        position: absolute;
+        width: 60%;
+        height: 116px;
+        left: 20%;
+        top: 4px;
+        float: left;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0) 0%, rgba(243, 194, 18, 0.38) 100%);
+        border-radius: 20px;
+    }
+    .header_logo {
+        position: absolute;
+        width: 70px;
+        height: 58px;
+        left: 45%;
+        top: 31px;
+        background: #ffffff;
+        float: left;
+    }
+    .header_menu a {
+        position: relative;
+        width: 474.12px;
+        height: 33px;
+        left: 800px;
+        display: none;
+        font-family: 'Montserrat';
+        font-size: 25px;
+        text-decoration-line: inherit;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .content {
+        position: absolute;
+        width: 60%;
+        height: 536px;
+        left: 20%;
+        top: 17%;
+        background: linear-gradient(180deg, rgba(243, 194, 18, 0.0487985) 0%, rgba(243, 194, 18, 0.28) 49.01%, rgba(243, 194, 18, 0) 100%);
+        border-radius: 30px;
+        text-align: center;
+        overflow-y: auto;
+    }
+.footer {
+    position: absolute;
+    width: 62%;
+    height: 85%;
+    left: 20%;
+    top: 80%;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0.52) 0%, rgba(243, 194, 18, 0) 100%);
+    border-radius: 38px;
+}
+    .footer h1 {
+        position: relative;
+        width: 534px;
+        height: 27px;
+        left: 200px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .photo_three img {
+        position: absolute;
+        width: 67.23px;
+        height: 60px;
+        left: 440px;
+        top: 502px;
+    }
+    .photo_two img {
+        position: absolute;
+        width: 67.23px;
+        height: 60px;
+        left: 443px;
+        top: 300px;
+    }
+    .photo_one img {
+        position: absolute;
+        width: 58.27px;
+        height: 56px;
+        left: 445px;
+    }
+    .photo_three h1{
+    top: 250px;
+    }
+    .photo_two h1{
+        top: 150px;
+    }
+    .photo_one h1{
+        top: 67px;
+    }
+    .additionally h1{
+        top: 305px;
+        left: 210px
+    }
+    .vk img {
+        position: relative;
+        float: right;
+        left: -55%;
+        margin-top: 84%;
+    }
+    .inst img {
+        position: relative;
+        float: right;
+        left: -46%;
+        margin-top: 84%;
+    }
+    .telegram img {
+        position: relative;
+        float: right;
+        left: -37%;
+        margin-top: 84%;
+    }
+    .burger{
+        float: right;
+        margin-top: 26px;
+        left: -300px;
+        display: block;
+    }
+    .burger img{
+        position: absolute;
+        margin-left: -28%;
+    }
+    .saitbar {
+        position: absolute;
+        width: 61%;
+        height: 275px;
+        left: 19%;
+        display: none;
+        top: 200px;
+        border-radius: 29px;
+        z-index: 1000;
+        background-color: #5f5b11;
+    }
+    .saitbar h1 {
+    position: absolute;
+    width: 219px;
+    height: 31.75px;
+    left: 36%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    top: 5%;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.saitbar li {
+    list-style-type: none;
+    display: inline-block;
+}
+.saitbar a {
+    width: 150px;
+    margin: 15px;
+    display: inline-block;
+    line-height: 90px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.closes {
+    font-size: 40px;
+    top: 8%;
+    left: 95%;
+}
+.header_burger {
+    display: block;
+    position: relative;
+    width: 64%;
+    height: -3%;
+    top: -5%;
+    left: -5%;
+    text-align: center;
+}
+.header_burger li{
+    width:30%;
+}
+.close {
+    margin-left: 880px;
+    font-size: 60px;
+    margin-top: 0px;
+    float: left;
+    color: yellow;
+}
+.submit input {
+    position: absolute;
+    width: 23%;
+    height: 13%;
+    left: 37%;
+    font-size: 22px;
+    top: 290px;
+    background: #039912;
+    border-radius: 30px;
+}
+.text input {
+    width: 80%;
+    position: relative;
+    height: 60%;
+    top: 5px;
+    font-size: 117%;
+}
+.email input {
+    width: 25%;
+    position: relative;
+    top: 4px;
+    left: 0%;
+    font-size: 117%;
+}
+.text1 input {
+    position: relative;
+    top: -2px;
+    font-size: 141%;
+}
+.number input {
+    width: 238px;
+    height: 21px;
+    float: left;
+    margin-left: -248px;
+    margin-top: 120px;
+}
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 130%;
+    left: 195%;
+    border: 15px solid white;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: loading 0.5s ease infinite;
+}
+.blur2 {
+    width: 100%;
+    height: -25%;
+    float: left;
+    top: -10%;
+    position: absolute;
+}
+#vk{
+    position: relative;
+    top: 40px;
+}
+#inst{
+    position: relative;
+    top: 40px;
+}
+#telegram{
+    position: relative;
+    top: 40px;
+}
+.modal {
+    position: fixed;
+    width: 1000px;
+    height: 350px;
+    left: 19%;
+    top: 200px;
+    z-index: 100;
+    background: #8C7B3D;
+    border-radius: 80px;
+    display: none;
+}
+}
+@media (max-width: 350px) and (min-width: 300px){
+.modal {
+    position: fixed;
+    width: 970px;
+    height: 350px;
+    left: 12%;
+    top: 200px;
+    z-index: 100;
+    background: #8C7B3D;
+    border-radius: 80px;
+    display: none;
+}
+.header_menu {
+    position: absolute;
+    width: 60%;
+    height: 116px;
+    left: 10%;
+    top: 4px;
+    float: left;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0) 0%, rgba(243, 194, 18, 0.38) 100%);
+    border-radius: 20px;
+}
+.header_logo {
+    position: absolute;
+    width: 70px;
+    height: 58px;
+    left: 35%;
+    top: 31px;
+    background: #ffffff;
+    float: left;
+}
+.burger img {
+    position: absolute;
+    margin-left: -40%;
+}
+.content {
+    position: absolute;
+    width: 60%;
+    height: 536px;
+    left: 10%;
+    top: 17%;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0.0487985) 0%, rgba(243, 194, 18, 0.28) 49.01%, rgba(243, 194, 18, 0) 100%);
+    border-radius: 30px;
+    text-align: center;
+    overflow-y: auto;
+}
+.footer {
+    position: absolute;
+    width: 62%;
+    height: 85%;
+    left: 10%;
+    top: 80%;
+    background: linear-gradient(180deg, rgba(243, 194, 18, 0.52) 0%, rgba(243, 194, 18, 0) 100%);
+    border-radius: 38px;
+}
+.vk img {
+    position: relative;
+    float: right;
+    left: -65%;
+    margin-top: 84%;
+}
+.inst img {
+    position: relative;
+    float: right;
+    left: -55%;
+    margin-top: 84%;
+}
+.telegram img {
+    position: relative;
+    float: right;
+    left: -45%;
+    margin-top: 84%;
+}
+}

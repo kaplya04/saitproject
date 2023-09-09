@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0032)file:///D:/3IP/kaplya/index.html -->
+<html lang="ru">
+   <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="{% static '/CSS/style.css'%}">
+       <link rel="shortcut icon" type="image/png" href="{% static 'img/ikonka.png'%}">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Результаты поиска</title>
+</head>
+   <body>
+<div class="header">
+    <div class="row">
+    <div class="header_logo">
+        <a href="http://127.0.0.1:8000/index"><img src="{% static '/img/logo.png' %}" alt="" width="350px" height="100"></a>
+    </div>
+    <div class="header_menu">
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Адрес доставки</a></li>
+        <li><a href="#">Заказ</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Мой профиль</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="header_reg">
+        <ul>
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Регистрация</a></li>
+        </ul>
+    </div>
+    </div>
+
+<div class="container-fluid cont" style="
+    padding-right: 0px;
+    padding-left: 0px;">
+
+    <div class="con_left">
+        <H1>Фильтр</H1>
+        <hr>
+
+        <form class="d-flex" action="{% url 'results' %}" method="get">
+            <input name="q" class="form-control mr-2"  type="search" placeholder="Поиск" aria-label="Search">
+            <button  class="btn btn-outline-success" type="submit">🔍</button>
+      </form>
+    </div>
+    <div class="inner_cont">
+        <h1>Результаты поиска</h1>
+
+        {% for a in object_list %}
+        <div class="product-1">
+            <div class="image">
+                <img src="{{a.cover.url}}" alt="">
+            </div>
+            <p class="info">{{ a.name }}</p>
+                <div class="rating">
+                <ul>
+                    <li><ion-icon name="star"></ion-icon></li>
+                    <li><ion-icon name="star"></ion-icon></li>
+                    <li><ion-icon name="star"></ion-icon></li>
+                    <li><ion-icon name="star"></ion-icon></li>
+                    <li><ion-icon name="star-half"></ion-icon></li>
+                </ul>
+                </div>
+            <div class="info-price">
+                <span class="price">{{ a.price }}<small>₽</small></span>
+                    <a href="{{ a.get_absolute_url }}"><button class="add-to-cart"><ion-icon name="basket-outline"></ion-icon></a>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+
+<div class="footer">
+    <div class="text1">
+        <h3>Покупателям</h3>
+        <ul>
+            <li>Как выбрать товар</li>
+            <li>Оплата и доставка</li>
+            <li>Обратная связь</li>
+            <li>Покупайте как юр.лицо</li>
+        </ul>
+    </div>
+    <div class="text2">
+        <h3>Продавцам</h3>
+        <ul>
+            <li>Личный кабинет продавца</li>
+            <li>Продавайте на маркете</li>
+            <li>Документация для партнеров</li>
+            <li>Сайт для партнеров</li>
+        </ul>
+    </div>
+    <div class="main">
+        <p class="main-phone">Заказывайте товары круглосуточно и задавайте вопросы.
+            <a href="#">+7(987) 668-18-50</a></p>
+    </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
